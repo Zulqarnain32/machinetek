@@ -1,40 +1,22 @@
-import React, { useState,useEffect } from "react";
+import React, { useState } from "react";
 import { IoIosCall } from "react-icons/io";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { MdOutlineForwardToInbox } from "react-icons/md";
 import { Link } from "react-router-dom";
 const Navbar = () => {
   const [showsidebar, setShowSidebar] = useState(false);
-  const [scrolled, setScrolled] = useState(false); 
 
   const handleMenu = () => {
     setShowSidebar(!showsidebar);
     console.log("you clicked mer");
   };
   const closeSidebar = () => {
-    setShowSidebar(false)
-  }
+    setShowSidebar(false);
+  };
 
-    useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY >= 90) {
-        setScrolled(true);
-      } else {
-        setScrolled(false);
-      }
-    };
-
-    window.addEventListener('scroll', handleScroll);
-
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
-
- 
-    
   return (
     <>
+    {/* This is Navbar Header  */}
       <div className="nav-header">
         <div className="logo">
           <img src="/assets/logo.png" alt="" />
@@ -60,29 +42,29 @@ const Navbar = () => {
             </div>
           </div>
         </div>
-        {/* <div className="navbar-container"> */}
-        <div className={`navbar-container ${scrolled ? 'setheight' : 'not'}`}>
-
-        <Link to="/" className="nav-links-btn">
-        <div>Home</div>
-      </Link>
-      <Link to="/about" className="nav-links-btn">
-        <div>About</div>
-      </Link>
-      <Link to="/gallary" className="nav-links-btn">
-        <div>Gallary</div>
-      </Link>
-      <Link to="/calientle" className="nav-links-btn">
-        <div>Calientle</div>
-      </Link>
-      <Link to="/services" className="nav-links-btn">
-        <div>Services</div>
-      </Link>
-      <Link to="/contact" className="nav-links-btn">
-        <div>Contact</div>
-      </Link>
-        </div>
       </div>
+         {/* This is navbar */}
+      <div className="navbar-container">
+        <Link to="/" className="nav-links-btn">
+          <div>Home</div>
+        </Link>
+        <Link to="/about" className="nav-links-btn">
+          <div>About</div>
+        </Link>
+        <Link to="/gallary" className="nav-links-btn">
+          <div>Gallary</div>
+        </Link>
+        <Link to="/calientle" className="nav-links-btn">
+          <div>Calientle</div>
+        </Link>
+        <Link to="/services" className="nav-links-btn">
+          <div>Services</div>
+        </Link>
+        <Link to="/contact" className="nav-links-btn">
+          <div>Contact</div>
+        </Link>
+      </div>
+
       {/* mobile navbar */}
       <div className="mobile-nav">
         <div className="m-logo">
