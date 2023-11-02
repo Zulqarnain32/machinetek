@@ -25,7 +25,7 @@ const Navbar = () => {
         <div className="call-and-email">
           <div className="call-div">
             <div className="call-icon">
-              <IoIosCall className="ic" />
+              <IoIosCall className="header-icons" />
             </div>
             <div className="nav-num">
               <div>Call us anytime</div>
@@ -34,7 +34,7 @@ const Navbar = () => {
           </div>
           <div className="call-div">
             <div className="call-icon">
-              <MdOutlineForwardToInbox className="ic" />
+              <MdOutlineForwardToInbox className="header-icons" />
             </div>
             <div className="nav-num">
               <div>Send us a mail</div>
