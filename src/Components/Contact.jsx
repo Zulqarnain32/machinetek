@@ -1,4 +1,5 @@
 import React from "react";
+import Footer from "./Footer";
 
 const Contact = () => {
   return (
@@ -31,6 +32,7 @@ const Contact = () => {
           <p>www.machinetek.pk</p>
         </div>
       </div>
+      <Footer/>
     </>
   );
 };
