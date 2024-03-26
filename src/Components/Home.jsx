@@ -1,11 +1,17 @@
 import React from 'react'
+import CarouselComponent from './CarouselC'
+import Card from './Card'
+import Section from './Section'
+import Message from './Message'
 
 const Home = () => {
   return (
     <div>
-      <h1>This is Home page</h1>
       <div className="home-container">
-        
+        <CarouselComponent/>
+        <Card/>
+        <Section/>
+        <Message/>
       </div>
     </div>
   )

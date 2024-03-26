@@ -4,9 +4,18 @@
   box-sizing: border-box;
   list-style: none;
   font-family: 'Poppins',sans-serif;
+  user-select: none;
 }
 :root {
   --main: rgb(255, 199, 16);
+}
+
+
+.slider-image{
+  height: 470px;
+  width: 100%;
+  /* object-fit: contain; */
+  object-fit: cover;
 }
 ::-webkit-scrollbar{
   display:  none;
@@ -19,6 +28,7 @@
 .logo{
   width: 45%;
   background-color: rgb(255, 199, 16);
+  background-color: rgb(182, 219, 217);
   clip-path: polygon(0 0, 100% 0%, 71% 100%, 0 100%);
   font-size: 34px;
   display: flex;
@@ -73,11 +83,12 @@
   width: 70%;
   background-color: rgb(53, 51, 51);
   background-color: rgb(97, 91, 91);
-  top: 0px;
+  top: 0px !important;
   left: 15%;
   display: flex;
-  position: sticky;
+  position: sticky !important;
   margin-top: -40px;
+  z-index: 99;
 }
 .navbar-container .nav-links-btn{
   flex-grow: 1;
@@ -97,9 +108,75 @@
   display: none;
 }
 .home-container{
-  background-color: yellow;
-  height: 2400px;
+  width: 100%;
+  margin-top: -40px;
+  z-index: 90;
+
+}
+
+
+/*? About PAge  */
+.port-info{
   width: 90%;
+  display: flex;
+  margin: 30px auto;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.port-info .portfolio{
+  width: 48%;
+  text-align: justify;
+}
+.port-info .portfolio-img{
+  width: 48%;
+}
+.port-info .portfolio-img img{
+  width: 100%;
+}
+
+.vision-mission{
+  margin: 10px auto;
+  width: 100%;
+  text-align: center;
+}
+.vm-container{
+  width: 80%;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap:20px;
+  margin:  10px auto;
+}
+.vision{
+  width: 48%;
+}
+.mission{
+  width: 48%;
+}
+
+.ab-icon{
+  font-size: 50px;
+  margin-bottom: 12px;
+  color: yellow;
+}
+.policy-container{
+  background-color: #62b3ed ;
+  width: 100%;
+  margin: 50px auto;
+  color: #fff;
+  text-align: center;
+  padding: 30px 0;
+}
+.policy-container h1{
+  font-size: 30px;
+}
+.po{
+  width: 60%;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 19px;
 }
 
 /* contact page css  */
@@ -181,6 +258,7 @@
 }
 .f-logo{
   width: 80px;
+  filter: invert(100%);
 }
 .f-icons{
   color: var(--main);
@@ -190,10 +268,55 @@
 }
 .patti{
   background-color: var(--main);
-  height: 50px;
+  height: 40px;
   text-align: center;
-  line-height: 50px;
+  line-height: 40px;
   font-weight: 580;
+}
+
+
+/* section card  */
+.parent-card{
+  display: flex;
+  margin-top: 60px;
+  margin-bottom: 100px;
+  /* height: 500px; */
+  /* background-color: yellow; */
+  justify-content: space-between;
+  padding: 0 50px;
+  flex-wrap: wrap;
+  row-gap: 50px;
+  padding: 0 100px;
+}
+.single-card{
+  width: 350px;
+  /* border: 1px solid black; */
+  height: fit-content;
+  /* border-radius: 10px; */
+  box-shadow: 0px 0px 14px 1px rgb(174, 174, 174);
+  /* background-color: red; */
+  /* background-color: yellow; */
+}
+
+.card-img{
+  height: 200px;
+  width: 350px;
+  object-fit: cover;
+}
+.cart-text{
+  text-align: justify;
+}
+/* .card-title{
+  margin-top: 10px;
+} */
+
+/* section page*/
+.home-img{
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  margin-top: 20px;
+  object-fit: cover;
 }
 
 /*? Responsive css starts */

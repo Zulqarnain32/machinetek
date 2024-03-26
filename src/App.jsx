@@ -7,6 +7,8 @@ import Services from './Components/Services'
 import Gallary from './Components/Gallary'
 import Contact from './Components/Contact'
 import Calientle from './Components/Calientle'
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Footer from './Components/Footer'
 import("./App.css")
 const App = () => {
   return (
@@ -21,6 +23,7 @@ const App = () => {
          <Route path = "/calientle" element = {<Calientle/>} />
          <Route path = "/contact" element = {<Contact/>} />
        </Routes>
+       {/* <Footer/> */}
       </BrowserRouter>
     </>
   )

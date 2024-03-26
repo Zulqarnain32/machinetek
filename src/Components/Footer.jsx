@@ -16,7 +16,7 @@ const Footer = () => {
              </p>
           </div>
           <div className="footer-links">
-             <div className="f-call"><IoIosCall className='f-icons'/> +92-42-37918132</div>
+             <div className="f-call"><IoIosCall className='f-icons'/> +92 300-8485574</div>
              <div className="f-email">
                 <MdOutlineForwardToInbox className='f-icons'/>
              info@machinetek.pk

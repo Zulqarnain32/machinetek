@@ -23,7 +23,7 @@ const Contact = () => {
           <p>27n, Sui Gas Road, Mehboob Park, Jia Musa Shahdara Lahore</p>
           <h3>Mobile</h3>
           <p>+92-0300-848 557</p>
-          <p>+92-300 840 2095</p>
+          {/* <p>+92-300 840 2095</p> */}
           <h3>Telephone</h3>
           <p>+92-42-37918132</p>
           <h3>Email</h3>

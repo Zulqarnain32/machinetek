@@ -51,15 +51,16 @@ const Navbar = () => {
         <Link to="/about" className="nav-links-btn">
           <div>About</div>
         </Link>
+        <Link to="/services" className="nav-links-btn">
+          <div>Services</div>
+        </Link>
         <Link to="/gallary" className="nav-links-btn">
           <div>Gallary</div>
         </Link>
         <Link to="/calientle" className="nav-links-btn">
-          <div>Calientle</div>
+          <div>Calientele</div>
         </Link>
-        <Link to="/services" className="nav-links-btn">
-          <div>Services</div>
-        </Link>
+       
         <Link to="/contact" className="nav-links-btn">
           <div>Contact</div>
         </Link>
